@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.calculation {
+  margin: 1rem 0;
+}
+
+.layout-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.button {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.results {
+  border-left: 1px solid black;
+}
