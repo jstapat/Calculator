@@ -5,18 +5,22 @@
 
 .layout {
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .calculation {
   margin: 1rem 0;
 }
 
+.button-input {
+  font-size: 2rem;
+}
+
 .layout-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .button {
