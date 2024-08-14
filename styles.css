@@ -6,28 +6,55 @@
 .layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  background-color: rgb(50, 50, 50);
+  color: white;
 }
 
-.calculation {
-  margin: 1rem 0;
+.wrapper {
+  height: 30vh;
+}
+
+.calculationArea {
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 4rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .button-input {
-  font-size: 2rem;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 5rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .layout-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0.5rem;
-  margin: 2rem;
+  height: 70vh;
 }
 
 .button {
   font-size: 2rem;
-  padding: 1rem 0;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(45, 45, 45);
+  cursor: pointer;
 }
 
 .results {
-  border-left: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 3rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }

@@ -1,19 +1,57 @@
-const one = 1;
-const two = 2;
-const three = 3;
-const four = 4;
-const five = 5;
-const six = 6;
-const seven = 7;
-const eight = 8;
-const nine = 9;
-const zero = 0;
-const plus = "+";
-const minus = "-";
-const division = "/";
-const multiplikation = "*";
-const equals = "=";
+let newInput = 0;
+let lastInput = 0;
+let operator = "+";
 
-var calculation = "";
+function numberInput(number) {
+  newInput = newInput * 10 + number;
+  document.getElementById("button-input").innerHTML = newInput;
+}
 
-function input7() {}
+function add() {
+  operation();
+  operator = "+";
+  document.getElementById("calculation").innerHTML = lastInput + operator;
+}
+
+function subtract() {
+  operation();
+  operator = "-";
+  document.getElementById("calculation").innerHTML = lastInput + operator;
+}
+
+function multiply() {
+  operation();
+  operator = "*";
+  document.getElementById("calculation").innerHTML = lastInput + operator;
+}
+
+function divide() {
+  operation();
+  operator = "/";
+  document.getElementById("calculation").innerHTML = lastInput + operator;
+}
+
+function operation() {
+  if (operator === "+") {
+    lastInput = lastInput + newInput;
+  } else if (operator === "-") {
+    lastInput = lastInput - newInput;
+  } else if (operator === "*") {
+    lastInput = lastInput * newInput;
+  } else if (operator === "/") {
+    lastInput = lastInput / newInput;
+  }
+
+  newInput = 0;
+  document.getElementById("button-input").innerHTML = 0;
+}
+
+function equals() {}
+
+function clearAll() {
+  newInput = 0;
+  document.getElementById("button-input").innerHTML = 0;
+  lastInput = 0;
+  document.getElementById("calculation").innerHTML = 0;
+  document.getElementById("results").innerHTML = 0;
+}
