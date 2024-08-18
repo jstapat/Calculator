@@ -52,8 +52,8 @@
 }
 
 .results {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
   font-size: 3rem;
   padding: 1rem;
   box-sizing: border-box;
